@@ -1,0 +1,11 @@
+.layout-container, .layout-container-screen {
+    @apply flex flex-col;
+}
+
+.layout-container {
+    @apply h-full;
+}
+
+.layout-container-screen {
+    @apply h-screen;
+}
