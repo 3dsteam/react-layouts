@@ -1,4 +1,5 @@
 import { HTMLAttributes, PropsWithChildren } from "react";
+import "./conatiner.css";
 
 interface Props extends HTMLAttributes<HTMLDivElement>, PropsWithChildren {
     fullScreen?: boolean;

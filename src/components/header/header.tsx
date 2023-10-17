@@ -1,4 +1,5 @@
 import { HTMLAttributes, PropsWithChildren } from "react";
+import "./header.css";
 
 interface Props extends HTMLAttributes<HTMLDivElement>, PropsWithChildren {}
 
