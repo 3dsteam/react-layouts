@@ -16,7 +16,10 @@ export default defineConfig({
             entry: "./src/index.ts",
             name: name, // From package.json
             formats: ["es", "cjs"],
-            fileName: (format) => `index.${format}.js`,
+            fileName: (format) => {
+                if (format === "cjs") return "index.cjs";
+                return "index.js";
+            },
         },
         rollupOptions: {
             output: {
